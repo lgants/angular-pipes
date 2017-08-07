@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
+// setting pure to false triggers reapplying the pipe whenever any data changes on the page (can lead to performance issues), which otherwise wouldn't occur - by default pure is true
 @Pipe({
   name: 'filter',
   pure: false
